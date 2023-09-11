@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="aulas:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/aulas_jar</output-path>
+    <root id="archive" name="aulas.jar">
+      <element id="module-output" name="aulas" />
+    </root>
+  </artifact>
+</component>

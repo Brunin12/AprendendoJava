@@ -1,0 +1,241 @@
+Java Annotations
+
+sempre usar ";" no fim da linha
+
+Variaveis:
+tipo nome_da_variavel = valor;
+
+tipos:
+byte = numero (-128 > 127)
+String = texto
+int = numero inteiro (Ex.: 1, 2, -100, 100, 18990)
+double = numero com casas decimais ate 15 (Ex.: 4.6)
+float = numero com casas decimais(Ex.: 4.6)
+boolean = true ou false
+
+var = tipo flexivel
+val = constante
+
+Mostrar Textos:
+System.out.println(mensagem)
+
+Entrada de Textos:
+Scanner scan = new Scanner(System.in);
+System.out.println("digite seu nome");
+var nome = scan.nextLine();
+System.out.println(nome);
+
+ou use isso:
+
+static String input(String msg) { 
+	
+	System.out.println(msg);
+	Scanner scan = new Scanner(System.in);
+	return scan.nextLine();
+
+}
+
+
+Operadores Aritimeticos:
+valor1 + valor2 (soma)
+valor1 - valor2 (subtração)
+valor1 / valor2 (divisão)
+valor1 * valor2 (multiplicação)
+
+operadores relacionais:
+
+    IGUAL (==)
+    MENOR (<)
+    MAIOR (>)
+    MENOR OU IGUAL (<=)
+    MAIOR OU IGUAL (>=)
+    DIFERENTE (!=)
+    
+If e Else:
+
+sintaxe:
+
+//se a condição for verdadeira execulta o codigo1,
+//se não for a condição1 for false e a condição2 for true execulta o codigo3, se nenhuma for true, execulta o codigo2
+if (condição) {
+	codigo1
+} else if (condição2) {
+	codigo3
+}else {
+	codigo2
+}
+
+//lembrando que o else e else if são opicionais, mas o if é obrigatorio
+
+(V) if (condição) {} else if (condição) {} else {}
+(X) else {} if (condição)
+(X) else {if} (condição)
+(X) if () else {} else if () {}
+
+operadores logicos:
+
+e = &&
+ou = ||
+
+exemplo:
+
+if (cond1 || cond2) {
+
+} else if (cond3 && cond4) {
+
+}
+
+while:
+while é um loop que repete enquando uma condição for verdadeira
+
+ex:
+while (n1 < n2) {
+	n1++
+}
+
+for:
+for é tipo o while mas você cria a variavel detro do for e atualiza tambem dentro da estrutura do for
+
+ex.:
+for(int i = 0; i<=5;i++){
+	System.out.println(i)
+}
+
+arrays:
+arrays são listas que tem um indice onde podem ser acessadas pelo indice
+
+ex:
+
+        Tipo[] nome = {"pedro", "bruno", "joao"};
+        
+        System.out.println(nome[1]);
+
+resultado:
+	bruno
+
+swith:
+o swith é tipo um if mas ele é mais pratico
+
+case = if
+default = else
+
+swith (variavel) {
+	case 1:
+		codigo1;
+		break;
+	case2:
+		codigo2;
+		break;
+	default:
+		codigo3;
+
+
+sintaxe:
+int opcoes = 3;
+        
+        switch (opcoes) {
+            case 1:
+                print("Abrir conta");
+                break;
+                
+            case 2:
+                print("Saldo em conta");
+                break;
+                
+            case 3:
+                print("fatura cartão");
+                break;
+                
+            default:
+                print("escolha uma opcao valida");
+        }
+
+resultado:
+fatura cartão
+/fim/
+
+Projetos
+
+Variaves:
+<code>
+public class variaveis {
+
+    public static void main(String[] args) {
+        
+        String nome = "Bruno Parreira";
+        System.out.println(nome);
+        
+        byte idade = 90;
+        System.out.println(idade);
+        
+        int numeroDeRG = 1424;
+        System.out.println(numeroDeRG);
+        
+        double saldo = 1213.50;
+        System.out.println(saldo);
+        
+        float salario = 50.50f;
+        System.out.println(salario);
+        
+        boolean vivo = true;
+        
+        System.out.println(vivo);
+    }
+
+}
+<end>
+Operadores:
+<code>
+public class HelloWorld {
+
+    public static void main(String[] args) {
+    
+    //Operador de Soma (+)
+    //Operador de Subtração (-)
+    //Operador de Divisão (/) 
+    //Operador de Multiplicação (*)
+    
+    int valor1 = 20;
+    int valor2 = 10;
+    
+    int resultado = valor1 * valor2;
+    
+    System.out.println(resultado);
+        
+    }
+
+} 
+<end>
+
+operadores relacionais:
+<code>
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+    /*
+    
+    IGUAL (==)
+    MENOR (<)
+    MAIOR (>)
+    MENOR OU IGUAL (<=)
+    MAIOR OU IGUAL (>=)
+    DIFERENTE (!=)
+    
+    */
+    
+    int n1 = 10;
+    int n2 = 20;
+    
+    System.out.println(n1 != n2);
+    
+    
+    }
+
+}
+
+<end>
+if e else:
+<code>
+
+<end>

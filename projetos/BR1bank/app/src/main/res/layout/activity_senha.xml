@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".Senha">
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:background="@drawable/botao"
+        android:gravity="center"
+        android:hint="Sua Senha (obs: 161744)"
+        android:inputType=""
+        android:maxLength="6"
+        android:padding="30dp"
+        android:textColor="@color/black"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao"
+        android:padding="20dp"
+        android:text="Enviar"
+        android:textColor="@color/azul"
+        android:textSize="24sp"
+        app:backgroundTint="@color/branco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758"
+        tools:text="Enviar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
